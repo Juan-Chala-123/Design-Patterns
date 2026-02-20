@@ -2,21 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package command;
+package remotecontrol;
 
 /**
  *
  * @author CHALA RAMIREZ
  */
-public class TurnOffLight implements Command {
-    private Light light;
-
-    public TurnOffLight(Light light) {
-        this.light = light;
+public class Light {
+    public void turnOn() {
+        System.out.println("La luz esta encendida");
     }
 
-    @Override
-    public void execute() {
-        light.turnOff();
+    public void turnOff() {
+        System.out.println("La luz esta apagada");
     }
 }
